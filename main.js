@@ -6,7 +6,7 @@ const OPTIONS = {
   };
 
 const fetchIpInfo = ip => {
-    return fetch(`http://ip-api.com/json/${ip}`, OPTIONS)
+    return fetch(`https://ip-api.com/json/${ip}`, OPTIONS)
     .then(res => res.json())
     .catch(err => console.error(err));
 }   
